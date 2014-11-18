@@ -19,9 +19,10 @@ How to run this script
 ----------------------
 1. Dont run it by http on browser
 2. Use only command line. 
-3. Open a terminal, run command in the terminal "php -q SocketCli.php", dont close this terminal
-4. Open another terminal run "telnet localhost 6543"
-5. Thats it :).
+3. Change permission to make it executable, permission command is "sudo chmod a+x SocketCli.php"
+4. Open a terminal, run command in the terminal "php -q SocketCli.php", dont close this terminal
+5. Open another terminal run "telnet localhost 6543"
+6. Thats it :).
 
 
 Contact information
