@@ -14,9 +14,9 @@
     $requests = array();
 	
     while (true) {
-        $client = socket_accept($socket);
+        $requests[] = $client = socket_accept($socket);
         $welcome = "\nWelcome to the Socket machine.\nType 'uptime' to respond how long it has been running, or \ntype 'stop' to halt the server.\nType anything it will respond revise string that you have inputed\n";
-        $requests[] = socket_write($client, $welcome);
+        socket_write($client, $welcome);
 
         $respondCommand = new RespondCommand($client, $responseTime);
 
